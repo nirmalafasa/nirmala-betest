@@ -2,10 +2,10 @@ const express = require('express');
 const request = require('supertest');
 const { getUserByAccountNumber, getUserByRegistrationNumber } = require('../src/controllers/userController');
 const UserInfo = require('../src/models/UserInfo');
-const redisClient = require('../src/config/redisClient');
+const redisClient = require('../config/redisClient');
 
 jest.mock('../src/models/UserInfo');
-jest.mock('../src/config/redisClient');
+jest.mock('../config/redisClient');
 
 const app = express();
 app.use(express.json());

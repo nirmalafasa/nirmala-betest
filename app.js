@@ -14,9 +14,9 @@ connectDB();
 app.use(express.json({ extended: false }));
 
 // Define Routes
-app.use('/api', require('./routes/authRoutes'));
-app.use('/api/account', require('./routes/accountRoutes'));
-app.use('/api/user', require('./routes/userRoutes'));
+app.use('/api', require('./src/routes/authRoutes'));
+app.use('/api/account', require('./src/routes/accountRoutes'));
+app.use('/api/user', require('./src/routes/userRoutes'));
 
 const PORT = process.env.PORT || 5000;
 

@@ -1,5 +1,5 @@
 const UserInfo = require('../models/UserInfo');
-const redisClient = require('../config/redisClient');
+const redisClient = require('../../config/redisClient');
 
 const CACHE_EXPIRATION = 3600;
 
